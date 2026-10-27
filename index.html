@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Prijava :: miro.mirc</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Predstavitvena stran :: miro.mirc</title>
+    <!-- Avtomatska preusmeritev takoj (0 sekund) na predstavitveno stran -->
+    <meta http-equiv="refresh" content="0;url=index.php">
+    
+    <!-- Lahko dodaš še varnostno JS preusmeritev -->
+    <script>
+        window.location.href = "index.php";
+    </script>
 </head>
-
 <body>
-<div class="center-wrapper">
-    <form method="post" action="login.php?returnto=index.php">
-        <div class="signin-box">
-            <h2><font color="#fe9b02">miro</font>.mirc</h2>
-            <h3 class="signin-title-secondary">Prijava v sistem</h3>
-
-            <input name="uid" id="uid" type="text" class="form-control" required placeholder="Uporabniško ime">
-            <input type="password" name="pwd" id="pwd" class="form-control" required placeholder="Geslo">
-
-            <button name="login" type="submit" class="btn-signin">Prijava</button>
-
-            <p>Pozabljeno geslo? <a href="recover.html">Ponastavi geslo</a></p>
-            <p>Nimaš računa? <a href="account.html">Ustvari račun</a></p>
-        </div>
-    </form>
-</div>
-
+    <p>Preusmerjanje na stran... Če se stran ne odpre, kliknite <a href="index.php">tukaj</a>.</p>
 </body>
 </html>
