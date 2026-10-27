@@ -1,0 +1,126 @@
+body {
+    background: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background: #1e1a15;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header p {
+    color: #fe9b02;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: #1e1a15;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: #fe9b02;
+    margin-bottom: 20px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+}
+
+.project {
+    border-left: 4px solid #fe9b02;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.logout {
+    color: #fe9b02;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}
+
+/* celota je na sredini strani */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 25px;
+}
+
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fe9b02;
+}
+
+
+/*Poravnava besedila v levo v header*/
+.header-text {
+    text-align: left;
+}
+
+
+.header-text h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header-text p {
+    margin-top: 8px;
+    color: #fe9b02;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+
+/* Kontakt & povezave – linki */
+.section ul li a {
+    color: #6fa8dc;          /* nežna modra */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.section ul li a:hover {
+    color: #9fc5e8;          /* svetlejša ob hoverju */
+    text-decoration: underline;
+}
